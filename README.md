@@ -2,7 +2,7 @@
 
 My first Python repository, with constant updates throughout my journey!
 
-# For my Python scripts, check the Python branch.
+# For my Python scripts, check out the Python branch.
 
 Each commit and contribution to this repository represents my changes, improvements, and growth throughout my technical journey. GitHub is not just a place where I upload code; it is my portfolio for my journey into tech, and I can use it as a stepping stone toward working at some of my favorite technology companies.
 
