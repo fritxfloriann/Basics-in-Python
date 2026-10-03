@@ -4,7 +4,7 @@ My first Python repository, with constant updates throughout my journey! This is
 
 # Welcome to Main Branch
 
-This branch, referred to as `main`, it contains basic information, a README, updates, and files that introduce the reader to the `python` branch.
+This branch, referred to as `main`, contains basic information about the project, a README, updates, and files that introduce the reader to the `python` branch.
 
 # For my Python scripts, check out the Python branch.
 
