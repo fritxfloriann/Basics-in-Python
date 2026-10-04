@@ -13,7 +13,7 @@ else:
 
 # Age Verification using Python in Legal Drinking Age in Australia
 
-print("Welcome to Austrlian Legal Drinking Age Verification System.")
+print("Welcome to Australian Legal Drinking Age Verification System.")
 age = int(input("Enter your age: "))
 
 if age >= 18:
@@ -42,6 +42,6 @@ else:
 
 # Remember, laws and regulations regarding age verification may vary by country or region, so it's important to check the specific requirements in your area.
 
-# This projects uses Australia's legal age requirements for voting, drinking alcohol, and acquiring a driver's license as examples.
+# This project uses Australia's legal age requirements for voting, drinking alcohol, and acquiring a driver's license as examples.
 
 # This Python mini project uses Australia's laws and jurisdictions. Laws, regulations, and legal age requirements vary by territory and state in Australia, so it's important to check the specific requirements in your area.
