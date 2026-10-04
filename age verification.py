@@ -1,7 +1,7 @@
 
 # Age Verification using Python in Elections
 
-print("Welcome to Austrlian Election Age Verification System.")
+print("Welcome to Australian Election Age Verification System.")
 age = int(input("Enter your age: "))
 
 if age >= 18:
