@@ -43,6 +43,8 @@ print(f"I am learning {language}, and I am a beginner.")
 
 print(f"Also follow {name}'s GitHub.")
 
+# When using f-strings, notice how the space between the variable and the text is automatically added, so you don't have to worry about adding spaces between the variable and the text.
+
 print(f"My ultimate goal for {language} is to make visual novels based on my stories.")
 
 print("Thank you for reading, user")
