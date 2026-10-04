@@ -31,3 +31,18 @@ elif role == "Junior Software Developer":
 
 else:
     print("Access denied.")
+
+# Finally, the else function is when the condition in the if statement is false, and the elif function is false.
+
+role = "Intern"
+
+if role == "Software Developer":
+    print("Access granted.")
+
+elif role == "Junior Software Developer":
+    print("Access granted, but with limited permissions.")
+
+else:
+    print("Access denied.")
+
+# This will result in the output "Access denied." because the role is "Intern, which does not match any of the conditions in the if or elif statements.
