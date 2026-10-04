@@ -50,3 +50,19 @@ print("Thank you for reading, user")
 print("Notice how much simpler the f-string version is compared to the traditional way of printing out variables. F-strings allow for easier readability and less clutter in the code.")
 
 # Notice how much simpler the f-string version is compared to the traditional way of printing out variables. F-strings allow for easier readability and less clutter in the code.
+
+# Next, this code shows how f-strings can also be used to calculate variables and print them out in a simplified manner.
+
+# For example, if Fritz was a teen five years ago, we can use f-strings to calculate his age today in 2026, and print it out in a simplified manner.
+
+name = "Fritz"
+age_5_years_ago = 13
+current_year = 2021
+target_year = 2026
+
+current_age = age_5_years_ago + (target_year - current_year)
+print(f"{name} will be {current_age} years old in {target_year}.")
+
+print("It will result in the output 'Fritz will be 18 years old in 2026.' because Fritz was 13 years old five years ago, and in 2026, he will be 18 years old.")
+
+# This code demonstrates how f-strings can be used to simplify the process of printing out variables and calculating variables in a simplified manner.
