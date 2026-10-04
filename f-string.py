@@ -47,4 +47,6 @@ print(f"My ultimate goal for {language} is to make visual novels based on my sto
 
 print("Thank you for reading, user")
 
+print("Notice how much simpler the f-string version is compared to the traditional way of printing out variables. F-strings allow for easier readability and less clutter in the code.")
+
 # Notice how much simpler the f-string version is compared to the traditional way of printing out variables. F-strings allow for easier readability and less clutter in the code.
