@@ -1,15 +1,7 @@
-# Basics-in-Python
+# Welcome to the Python Branch
 
-My first Python repository, with constant updates throughout my journey! This is intended to be a passion project and a learning ground for Python.
+This is where all of my Python scripts, files, and projects are stored. 
 
-# Welcome to Main Branch
+This branch focuses on separating the `main` branch from the `python` branch to make organization seamless and more straightforward. 
 
-This branch, referred to as `main`, contains basic information about the project, a README, updates, and files that introduce the reader to the `python` branch.
-
-# For my Python scripts, check out the Python branch.
-
-Each commit and contribution to this repository represents my changes, improvements, and growth throughout my technical journey. GitHub is not just a place where I upload code; it is my portfolio for my tech journey, and I can use it as a stepping stone toward working at some of my favorite technology companies.
-
-My decision to learn Python is not about impressing others; I'm doing it for myself, to improve my skills, explore programming, and grow as a developer.
-
-In conclusion, GitHub is not just a place for code; it's a place for growth, learning, and documenting the journey along the way.
+The `python` branch stores Python commits and projects instead of the `main` branch.
