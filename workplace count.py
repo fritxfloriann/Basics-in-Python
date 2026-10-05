@@ -58,6 +58,8 @@ weekly_team_hours = total * hours_per_worker_per_week
 
 standard_weekly_team_hours = total * standard_hours_per_worker_per_week
 
+# Now, let's include additional time frames for each team and employees.
+
 additional_weekly_hours = weekly_team_hours - standard_weekly_team_hours
 
 additional_hours_per_worker = hours_per_worker_per_week - standard_hours_per_worker_per_week
@@ -68,6 +70,8 @@ annual_additional_hours = additional_weekly_hours * weeks_per_year
 full_time_equivalent_workers = weekly_team_hours / standard_hours_per_worker_per_week
 
 increase_percent = (additional_weekly_hours / standard_weekly_team_hours) * 100
+
+# And let's print the calculations.
 
 print(f"If all {total} workers work {hours_per_worker_per_week} hours per week, "
       
@@ -81,7 +85,6 @@ print(f"Compared with a {standard_hours_per_worker_per_week}-hour week, that is 
 
       f"({increase_percent:.0f}% more).")
 
-
 print(f"Assuming this schedule continues for {weeks_per_year} weeks, the team works "
       
       f"{annual_team_hours} hours per year, including "
@@ -89,7 +92,6 @@ print(f"Assuming this schedule continues for {weeks_per_year} weeks, the team wo
       f"{annual_additional_hours} hours above the 40-hour-per-worker benchmark.")
 
 print(f"At {standard_hours_per_worker_per_week} hours per week, "
-      
       
       f"{weekly_team_hours} hours is equivalent to "
 
