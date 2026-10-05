@@ -1,9 +1,9 @@
-# Welcome to the Python Branch
+# Welcome to the Main Branch
 
 This is where all of my Python scripts, files, and projects are stored. 
 
-Due to the merging of the `main` and `python` branches, this branch is discontinued and is only reserved for special cases, other circumstances, and contributions to other projects.
+Due to some circumstances, all my code from the `python` branch has been moved here for easier access. This is because of the complications in the Python branch.
 
-Thank you for your understanding. I will continue uploading to the `main` branch while reserving this branch for the near future.
+Read the README on the `python` branch for more information.
 
-Code here will remain.
+The `main` branch stores all the code, basic information, projects, and commits of Basics-In-Python and remains the default to this day.
