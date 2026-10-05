@@ -1,3 +1,5 @@
+# Welcome to the Python loop tutorial. In this tutorial, we will learn how to use while loops in Python.
+
 number = 1
 
 while number <= 5:
