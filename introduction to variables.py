@@ -19,9 +19,13 @@ name = "Fritz"
 language = "Python" 
 
 print(f"Hello everyone, I'm {name}.")
+
 print(f"I am learning {language} and I am a beginner.")
+
 print(f"Also follow {name}'s GitHub")
+
 print(f"My ultimate goal for {language} is to make visual novels based on my stories.")
+
 print("Thank you for reading, user.")
 
 # Notice how the third print had no spaces?
