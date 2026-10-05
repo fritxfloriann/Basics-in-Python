@@ -17,3 +17,17 @@ print(f"The workplace quantity is {quantity}. There is {junior} junior developer
 print(f"There is a total of {total} employees in the workplace.")
 
 # That is how you can use Python to do Math and print the results in a sentence format.
+
+# You can also calculate years of experience in the workplace using Python.
+
+total_experience = (junior * 1) + (developer * 3) + (senior * 5)
+
+print(f"The total years of experience in the workplace is {total_experience}.")
+
+# Once we have the total years of experience, we can calculate the average years of experience in the workplace.
+
+average_experience = total_experience / total
+
+print(f"The average years of experience in the workplace is {average_experience}.")
+
+# As a result, we can use Python to calculate the total years of experience and the average years of experience in the workplace.
