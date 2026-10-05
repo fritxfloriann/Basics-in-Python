@@ -2,6 +2,8 @@
 
 This is where all of my Python scripts, files, and projects are stored. 
 
-This branch focuses on separating the `main` branch from the `python` branch to make organization seamless and more straightforward. 
+Due to the merging of the `main` and `python` branches, this branch is discontinued and is only reserved for special cases, other circumstances, and contributions to other projects.
 
-The `python` branch stores Python commits and projects instead of the `main` branch.
+Thank you for your understanding. I will continue uploading to the `main` branch while reserving this branch for the near future.
+
+Code here will remain.
