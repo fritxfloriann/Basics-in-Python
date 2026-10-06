@@ -15,3 +15,17 @@ print(languages[0])
 print(languages[1])
 
 # With the second print, this should say Mandarin.
+
+# Now let's try adding items in a list, or should I say, appending.
+
+programming_languages = ["Python", "C#", "C+"]
+
+print(programming_languages[0])
+
+# This should say Python, but what if we want to add another programming language? We will use append to add variables in the list,
+
+programming_languages.append("JavaScript")
+
+print(programming_languages)
+
+# The new variable, "JavaScript", should be added to the list of variables.
