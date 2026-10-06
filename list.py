@@ -29,3 +29,14 @@ programming_languages.append("JavaScript")
 print(programming_languages)
 
 # The new variable, "JavaScript", should be added to the list of variables.
+
+# You also keep adding variables to the list.
+
+programming_languages.append("Assembly")
+
+programming_languages.append("C++")
+
+print(programming_languages)
+
+# You can continuously add variables into a list by appending them, but what about removing them?
+
