@@ -40,3 +40,20 @@ print(programming_languages)
 
 # You can continuously add variables into a list by appending them, but what about removing them?
 
+# Now what about removing variables from a list? Let's focus on the removal of variables in a list.
+
+programming_languages = ["Python", "C#", "C", "JavaScript", "Assembly", "C++"]
+
+# The list contains a lot of variables. Let's remove one.
+
+programming_languages.remove("C")
+
+print(programming_languages)
+
+programming_languages = ["Python", "C#", "JavaScript", "Assembly", "C++"]
+
+programming_languages.remove("C#")
+
+print(programming_languages)
+
+# Remember, the .remove command only removes one variable.
