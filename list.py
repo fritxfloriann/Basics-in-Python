@@ -18,7 +18,7 @@ print(languages[1])
 
 # Now let's try adding items in a list, or should I say, appending.
 
-programming_languages = ["Python", "C#", "C+"]
+programming_languages = ["Python", "C#", "C"]
 
 print(programming_languages[0])
 
