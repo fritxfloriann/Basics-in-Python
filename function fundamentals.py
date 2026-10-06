@@ -15,4 +15,9 @@ def greet():
 def greet(Fritz):
     print(f"Hello, {Fritz}!")
 
-# I used my name to greet.
+# I used my name to greet. Now let's use numbers towards the next function code.
+
+def multiply(2, 4):
+    print(2 * 4)
+
+# It will multiply the following numbers via function.
