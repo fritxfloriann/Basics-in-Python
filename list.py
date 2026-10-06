@@ -66,18 +66,23 @@ print(len(languages))
 
 # It should output the quantity of the list. Now let's incoperate if and input.
 
-known_languages = input("Enter the languages you know from the list below: ")
+languages = ["English", "Mandarin", "German", "Spanish"]
 
-if len(languages) > 4:
+known_languages = input(
+    "Enter the languages you know, separated by commas: "
+).split(",")
+
+known_languages = [language.strip() for language in known_languages]
+
+for language in known_languages:
+    if language not in languages:
+        print(f"{language} isn't in the list!")
+
+if len(known_languages) >= 3:
     print("You are multilingual.")
 
-if len(languages) > 3:
-    print("You are multilingual.")
-
-elif len(languages) > 2:
+elif len(known_languages) == 2:
     print("You are bilingual.")
 
-else len(languages) > 1:
+else:
     print("You are monolingual.")
-
-# This is how lists can be interactive programs.
