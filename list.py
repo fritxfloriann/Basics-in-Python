@@ -86,3 +86,5 @@ elif len(known_languages) == 2:
 
 else:
     print("You are monolingual.")
+
+# This is how you can use functions to make the list interactable.
