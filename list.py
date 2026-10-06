@@ -72,7 +72,7 @@ known_languages = input(
     "Enter the languages you know, separated by commas: "
 ).split(",")
 
-known_languages = [language.strip() for language in known_languages]
+known_languages = [lang.strip().title() for lang in known_languages if lang.strip()]
 
 for language in known_languages:
     if language not in languages:
