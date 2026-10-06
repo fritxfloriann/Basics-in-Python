@@ -56,4 +56,28 @@ programming_languages.remove("C#")
 
 print(programming_languages)
 
-# Remember, the .remove command only removes one variable.
+# Remember, the .remove command only removes one variable. 
+
+# And now, let's use the len() command. We will be using languages again.
+
+languages = ["English", "Mandarin", "German", "Spanish"]
+
+print(len(languages))
+
+# It should output the quantity of the list. Now let's incoperate if and input.
+
+known_languages = input("Enter the languages you know from the list below: ")
+
+if len(languages) > 4:
+    print("You are multilingual.")
+
+if len(languages) > 3:
+    print("You are multilingual.")
+
+elif len(languages) > 2:
+    print("You are bilingual.")
+
+else len(languages) > 1:
+    print("You are monolingual.")
+
+# This is how lists can be interactive programs.
