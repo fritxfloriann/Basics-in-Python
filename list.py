@@ -88,3 +88,12 @@ else:
     print("You are monolingual.")
 
 # This is how you can use functions to make the list interactable.
+
+# You can also use loops for structuring and looping the list.
+
+languages = ["English", "Mandarin", "German", "Spanish"]
+
+for language in languages:
+    print(language)
+
+# This will print the list of languages in a list format.
