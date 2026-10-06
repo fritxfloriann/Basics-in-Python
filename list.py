@@ -97,3 +97,12 @@ for language in languages:
     print(language)
 
 # This will print the list of languages in a list format.
+
+# Trying the Programming Languages variables next, it does the same results:
+
+programming_languages = ["Python", "C#", "C", "JavaScript", "Assembly", "C++"]
+
+for programming_language in programming_languages:
+    print(programming_language)
+
+# This will also print the list of programming languages in a list format as shown previously.
