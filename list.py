@@ -106,3 +106,9 @@ for programming_language in programming_languages:
     print(programming_language)
 
 # This will also print the list of programming languages in a list format as shown previously.
+
+# You can pick from the list by doing the following Python:
+
+print(languages[1])
+
+# It will print the second variable in the list, "C#".
