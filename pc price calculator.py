@@ -22,3 +22,15 @@ print(f"The storage device, power supply, and case all costs {storage_price}, {p
 print(f"For the total price of the entire rig, the total comes up to {total_build} dollars before taxes.")
 
 # This shows how arithmetic functions can calculate variables in Python.
+
+# And now, let's do a different approach with formating and more sophisticated commands.
+
+parts = {
+    "CPU": 400,
+    "GPU": 700,
+    "Motherboard": 150,
+    "RAM": 90,
+    "Storage": 80,
+    "PSU": 70,
+    "Case": 60,
+}
