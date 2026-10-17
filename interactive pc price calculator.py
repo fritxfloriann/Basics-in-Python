@@ -30,15 +30,25 @@ def get_parts_from_user():
 
 # Below is how Python handles errors, loops, functions, and how it computes.
 
+import math
+
 def get_price():
-    """Keep asking until the user enters a valid, non-negative number."""
+    """Keep asking until the user enters a valid, non-negative price."""
     while True:
         raw = input("Price: $").strip()
+
         try:
             price = float(raw)
+
+            if not math.isfinite(price):
+                print("Please enter a finite number.")
+                continue
+
             if price < 0:
                 print("Price can't be negative.")
                 continue
+
             return price
+
         except ValueError:
             print("Please enter a valid number.")
