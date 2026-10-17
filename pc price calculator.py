@@ -23,7 +23,7 @@ print(f"For the total price of the entire rig, the total comes up to {total_buil
 
 # This shows how arithmetic functions can calculate variables in Python.
 
-# And now, let's do a different approach with formating and more sophisticated commands.
+# And now, let's do a different approach with formatting and more sophisticated commands.
 
 parts = {
     "CPU": 400,
@@ -34,3 +34,16 @@ parts = {
     "PSU": 70,
     "Case": 60,
 }
+
+# This is a dictionary above. Below is how Python uses formatting to sort the output more elegantly.
+
+total_build = sum(parts.values())
+
+print("PC Build Price Breakdown")
+print("-" * 30)
+for part, price in parts.items():
+    print(f"{part:<12} ${price:>7.2f}")
+print("-" * 30)
+print(f"{'Total':<12} ${total_build:>7.2f}")
+
+# It will output dashes and has its own title to show the list. This is how Python formats code when doing math.
