@@ -1,4 +1,6 @@
 
+# Let's make a PC part calculator, by inputing the existing prices of each component to calculate the cost.
+
 cpu_price = 400
 gpu_price = 700
 motherboard_price = 200
