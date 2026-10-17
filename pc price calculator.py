@@ -12,3 +12,9 @@ case_price = 60
 total_build = (cpu_price + gpu_price + motherboard_price + ram_price + storage_price + power_supply_price + case_price)
 
 print(f"The CPU costs {cpu_price} and the GPU costs {gpu_price}.")
+
+print(f"Other important components like the motherboard and RAM costs {motherboard_price} and {ram_price} in total.")
+
+print(f"The storage device, power supply, and case all costs {storage_price}, {power_supply_price}, and {case_price}.")
+
+print(f"For the total price of the entire rig, the total comes up to {total_build} before taxes.")
