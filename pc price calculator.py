@@ -19,4 +19,6 @@ print(f"Other important components like the motherboard and RAM costs {motherboa
 
 print(f"The storage device, power supply, and case all costs {storage_price}, {power_supply_price}, and {case_price}.")
 
-print(f"For the total price of the entire rig, the total comes up to {total_build} before taxes.")
+print(f"For the total price of the entire rig, the total comes up to {total_build} dollars before taxes.")
+
+# This shows how arithmetic functions can calculate variables in Python.
