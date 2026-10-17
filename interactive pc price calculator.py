@@ -3,7 +3,7 @@
 
 # In this mini-project, I will be adding inputs, functions, and more refined enhancements from my previous project, pc  price calculator.py
 
-# This program offers interactable inputs and catches errors when the user enters an invalid and illegal answer.
+# This program offers interactive inputs and catches errors when the user enters an invalid or illegal answer.
 
 def get_parts_from_user():
     """Let the user enter part names and prices until they're done."""
@@ -25,3 +25,20 @@ def get_parts_from_user():
     return parts
 
 # The code above makes the user input their component and the price of the component they enter. This combines four fundamentals in Python.
+
+# IMPORTANT !! Type done once you're done answering the questions provided.
+
+# Below is how Python handles errors, loops, functions, and how it computes.
+
+def get_price():
+    """Keep asking until the user enters a valid, non-negative number."""
+    while True:
+        raw = input("Price: $").strip()
+        try:
+            price = float(raw)
+            if price < 0:
+                print("Price can't be negative.")
+                continue
+            return price
+        except ValueError:
+            print("Please enter a valid number.")
