@@ -45,3 +45,5 @@ print("-" * 30)
 print(f"{'Total':<12} ${total_build:>7.2f}")
 
 # It will output dashes and has its own title to show the list. This is how Python formats code when doing math.
+
+# Later on, I will remake this program with interactive features and I'll put more effort into it.
