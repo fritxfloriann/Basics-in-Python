@@ -69,3 +69,19 @@ def print_breakdown(parts):
         print(f"{part:<12} ${price:>7.2f}")
     print("-" * 30)
     print(f"{'Total':<12} ${calculate_total(parts):>7.2f}")
+
+# The code below makes the program coordinates the code together.
+
+def main():
+    parts = get_parts_from_user()
+    if parts:
+        print_breakdown(parts)
+    else:
+        print("No parts entered.")
+
+# These lines of code helps the program run.
+
+if __name__ == "__main__":
+    main()
+
+# Once the program runs, you can start using it as a calculator for your PC Build by calculating the prices of each component.
