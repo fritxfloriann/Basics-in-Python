@@ -1,49 +1,100 @@
 
-# Let's make a PC part calculator, by inputing the existing prices of each component to calculate the cost.
+# Interactive PC Part Calculator with input and functions.
 
-cpu_price = 400
-gpu_price = 700
-motherboard_price = 200
-ram_price = 150
-storage_price = 80
-power_supply_price = 70
-case_price = 60
+# In this mini-project, I will be adding inputs, functions, and more refined enhancements from my previous project, pc  price calculator.py
 
-total_build = (cpu_price + gpu_price + motherboard_price + ram_price + storage_price + power_supply_price + case_price)
+# This program offers interactable inputs and catches errors when the user enters an invalid and illegal answer.
 
-print("Hello, it's time to calculate how much your total build costs.")
+def get_parts_from_user():
+    """Let the user enter up to eight part names and prices."""
+    parts = {}
+    print("Welcome to PC Price Calculator! Enter wisely to get the most accurate answer.")
+    print(f"Enter up to {MAX_PARTS} PC parts (type 'done' to finish early)\n")
+    print("Suggested parts: CPU, GPU, Motherboard, RAM, Storage (SSD or HDD),")
+    print("Case, Cooling, and PSU. The currency used is United States Dollar (USD).\n")
 
-print(f"The CPU costs {cpu_price} and the GPU costs {gpu_price}.")
+    # The limitation of the quantity of the parts ensure that the program doesn't loop the questions asked.
 
-print(f"Other important components like the motherboard and RAM costs {motherboard_price} and {ram_price} in total.")
+    while len(parts) < MAX_PARTS:
+        name = input(f"Part name ({len(parts) + 1}/{MAX_PARTS}): ").strip()
+        if name.lower() == "done":
+            break
+        if not name:
+            print("Part name can't be empty.\n")
+            continue
+        if name in parts:
+            print("That part has already been entered.\n")
+            continue
 
-print(f"The storage device, power supply, and case all costs {storage_price}, {power_supply_price}, and {case_price}.")
+        price = get_price()
+        parts[name] = price
+        print(f"Added {name}: ${price:.2f}\n")
 
-print(f"For the total price of the entire rig, the total comes up to {total_build} dollars before taxes.")
+    if len(parts) == MAX_PARTS:
+        print(f"You've entered all {MAX_PARTS} parts.\n")
 
-# This shows how arithmetic functions can calculate variables in Python.
+    return parts
 
-# And now, let's do a different approach with formatting and more sophisticated commands.
+# The code above makes the user input their component and the price of the component they enter. This combines four fundamentals in Python.
 
-parts = {
-    "CPU": 400,
-    "GPU": 700,
-    "Motherboard": 150,
-    "RAM": 90,
-    "Storage": 80,
-    "PSU": 70,
-    "Case": 60,
-}
+# IMPORTANT !! Type done once you're done answering the questions provided.
 
-# This is a dictionary above. Below is how Python uses formatting to sort the output more elegantly.
+# Below is how Python handles errors, loops, functions, and how it computes.
 
-total_build = sum(parts.values())
+import math
 
-print("PC Build Price Breakdown")
-print("-" * 30)
-for part, price in parts.items():
-    print(f"{part:<12} ${price:>7.2f}")
-print("-" * 30)
-print(f"{'Total':<12} ${total_build:>7.2f}")
+MAX_PARTS = 8
 
-# It will output dashes and has its own title to show the list. This is how Python formats code when doing math.
+def get_price():
+    """Keep asking until the user enters a valid, non-negative price."""
+    while True:
+        raw = input("Price: $").strip()
+
+        try:
+            price = float(raw)
+
+            if not math.isfinite(price):
+                print("Please enter a finite number.")
+                continue
+
+            if price < 0:
+                print("Price can't be negative.")
+                continue
+
+            return price
+
+        except ValueError:
+            print("Please enter a valid number.")
+
+# Below, is the code where it adds up the cost for the part prices.
+
+def calculate_total(parts):
+    """Return the sum of all part prices."""
+    return sum(parts.values())
+
+# The next code takes the dictionary made by the user to be formatted into a readable input.
+
+def print_breakdown(parts):
+    """Print a formatted price breakdown and total."""
+    print("\nPC Build Price Breakdown")
+    print("-" * 30)
+    for part, price in parts.items():
+        print(f"{part:<12} ${price:>7.2f}")
+    print("-" * 30)
+    print(f"{'Total':<12} ${calculate_total(parts):>7.2f}")
+
+# The code below makes the program coordinates the code together.
+
+def main():
+    parts = get_parts_from_user()
+    if parts:
+        print_breakdown(parts)
+    else:
+        print("No parts entered.")
+
+# These lines of code helps the program run.
+
+if __name__ == "__main__":
+    main()
+
+# Once the program runs, you can start using it as a calculator for your PC Build by calculating the prices of each component.
