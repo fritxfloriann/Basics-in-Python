@@ -3,24 +3,35 @@
 
 # In this mini-project, I will be adding inputs, functions, and more refined enhancements from my previous project, pc  price calculator.py
 
-# This program offers interactive inputs and catches errors when the user enters an invalid or illegal answer.
+# This program offers interactable inputs and catches errors when the user enters an invalid and illegal answer.
 
 def get_parts_from_user():
-    """Let the user enter part names and prices until they're done."""
+    """Let the user enter up to eight part names and prices."""
     parts = {}
-    print("Enter your PC parts (type 'done' when finished)\n")
+    print("Welcome to PC Price Calculator! Enter wisely to get the most accurate answer.")
+    print(f"Enter up to {MAX_PARTS} PC parts (type 'done' to finish early)\n")
+    print("Suggested parts: CPU, GPU, Motherboard, RAM, Storage (SSD or HDD),")
+    print("Case, Cooling, and PSU. The currency used is United States Dollar (USD).\n")
 
-    while True:
-        name = input("Part name: ").strip()
+    # The limitation of the quantity of the parts ensure that the program doesn't loop the questions asked.
+
+    while len(parts) < MAX_PARTS:
+        name = input(f"Part name ({len(parts) + 1}/{MAX_PARTS}): ").strip()
         if name.lower() == "done":
             break
         if not name:
             print("Part name can't be empty.\n")
             continue
+        if name in parts:
+            print("That part has already been entered.\n")
+            continue
 
         price = get_price()
         parts[name] = price
         print(f"Added {name}: ${price:.2f}\n")
+
+    if len(parts) == MAX_PARTS:
+        print(f"You've entered all {MAX_PARTS} parts.\n")
 
     return parts
 
@@ -31,6 +42,8 @@ def get_parts_from_user():
 # Below is how Python handles errors, loops, functions, and how it computes.
 
 import math
+
+MAX_PARTS = 8
 
 def get_price():
     """Keep asking until the user enters a valid, non-negative price."""
