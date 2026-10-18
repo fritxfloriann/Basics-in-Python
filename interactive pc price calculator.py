@@ -52,3 +52,20 @@ def get_price():
 
         except ValueError:
             print("Please enter a valid number.")
+
+# Below, is the code where it adds up the cost for the part prices.
+
+def calculate_total(parts):
+    """Return the sum of all part prices."""
+    return sum(parts.values())
+
+# The next code takes the dictionary made by the user to be formatted into a readable input.
+
+def print_breakdown(parts):
+    """Print a formatted price breakdown and total."""
+    print("\nPC Build Price Breakdown")
+    print("-" * 30)
+    for part, price in parts.items():
+        print(f"{part:<12} ${price:>7.2f}")
+    print("-" * 30)
+    print(f"{'Total':<12} ${calculate_total(parts):>7.2f}")
