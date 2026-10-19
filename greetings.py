@@ -1,3 +1,4 @@
+# Today, I used a simple command of greeting to learn formatting and tons of fundamentals.
 
 name = input("What is your name? ").strip().title()
 
