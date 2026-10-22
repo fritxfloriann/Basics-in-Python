@@ -7,3 +7,7 @@ Due to some circumstances, all my code from the `python` branch has been moved h
 Read the README on the `python` branch for more information.
 
 The `main` branch stores all the code, basic information, projects, and commits of Basics-In-Python and remains the default to this day.
+
+## Why are some files in the other repository ahead of this repository?
+
+If you are referring to `Python-Projects`, it is mainly because it separates the files here to make them their own dedicated projects. Each project will be its own program. This is to distribute my code to users and make the projects much better. The separation between this experimental repository and the project repository is to organize my files here and to separate projects with actual programs you can execute. Updates to dedicated programs and projects derived from here will be improved in the `Python-Projects` repository by receiving updates, while the original file will be preserved here as source code.
