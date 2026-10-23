@@ -1,7 +1,7 @@
 
 # Basic Subtraction Program with Python
 
-def subtract(x, y)
+def subtract(x, y):
     return x - y
 
 print("Welcome to a basic subtraction program that handles basic subtraction.")
