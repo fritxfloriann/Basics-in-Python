@@ -4,7 +4,7 @@
 def add(x, y):
     return x + y
 
-print("Welcome to a basic calculator program.\n")
+print("Welcome to a basic calculator program. This section of the program will do additions.\n")
 
 print("Enter the first number and then the second number to add.\n")
 
