@@ -6,4 +6,5 @@ I will work on adding comments in each file and providing information for each p
 
 # IMPORTANT
 
-This folder is deprecated. You can still use the files included in this folder, but it's very limiting compared to the most recent calculator program that I've built. You can find the latest calculator program in the `Python-Projects` repository on my GitHub. The repository offers an entire calculator program that has more capabilities than the current files in this folder. I recommend you to use the `calculator_main.py` program instead of terminal based programs here on this folder.
+This folder is deprecated. You can still use the files included in this folder, but it's very limiting compared to the most recent calculator program that I've built. You can find the latest calculator program in the `Python-Projects` repository on my GitHub. The repository offers an entire calculator program that has more capabilities than the current files in this folder. I recommend that you use the `calculator_main.py` program instead of the terminal-based programs here in this folder.
+
