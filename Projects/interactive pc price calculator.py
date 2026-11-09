@@ -1,73 +1,49 @@
 
-import math
+# Let's make a PC part calculator, by inputing the existing prices of each component to calculate the cost.
 
-PARTS = ("CPU", "GPU", "Motherboard", "RAM", "Storage", "Case", "Cooling", "PSU")
+cpu_price = 400
+gpu_price = 700
+motherboard_price = 200
+ram_price = 150
+storage_price = 80
+power_supply_price = 70
+case_price = 60
 
-def get_model(part: str) -> str:
-    """Ask for a non-empty model name for a component."""
-    print(f"{part} model:")
-    while True:
-        model = input("Enter model: ").strip()
-        if model:
-            return model
-        print("Please enter a model.")
+total_build = (cpu_price + gpu_price + motherboard_price + ram_price + storage_price + power_supply_price + case_price)
 
+print("Hello, it's time to calculate how much your total build costs.")
 
-def get_price(part: str) -> float:
-    """Keep asking until the user enters a valid, non-negative price."""
-    print(f"{part} price:")
-    while True:
-        raw = input("Enter Price: $").strip()
+print(f"The CPU costs {cpu_price} and the GPU costs {gpu_price}.")
 
-        try:
-            price = float(raw)
-        except ValueError:
-            print("Please enter a valid number.")
-            continue
+print(f"Other important components like the motherboard and RAM costs {motherboard_price} and {ram_price} in total.")
 
-        if not math.isfinite(price):
-            print("Please enter a finite number.")
-        elif price < 0:
-            print("Price can't be negative.")
-        else:
-            return price
+print(f"The storage device, power supply, and case all costs {storage_price}, {power_supply_price}, and {case_price}.")
 
+print(f"For the total price of the entire rig, the total comes up to {total_build} dollars before taxes.")
 
-def get_parts_from_user() -> dict[str, tuple[str, float]]:
-    """Ask for a model and price for each standard PC component."""
-    print("Welcome to PC Price Calculator! Enter wisely to get the most accurate answer.")
-    print("Enter each component's model and price in United States Dollars (USD).")
-    return {
-        part: (get_model(part), get_price(part))
-        for part in PARTS
-    }
+# This shows how arithmetic functions can calculate variables in Python.
 
+# And now, let's do a different approach with formating and more sophisticated commands.
 
-def calculate_total(parts: dict[str, tuple[str, float]]) -> float:
-    """Return the sum of all part prices."""
-    return sum(price for _, price in parts.values())
+parts = {
+    "CPU": 400,
+    "GPU": 700,
+    "Motherboard": 150,
+    "RAM": 90,
+    "Storage": 80,
+    "PSU": 70,
+    "Case": 60,
+}
 
+total_build = sum(parts.values())
 
-def print_breakdown(parts: dict[str, tuple[str, float]]) -> None:
-    """Print a formatted model and price breakdown with the total."""
-    label_width = max(len("Total"), *(len(part) for part in parts))
-    model_width = max(len("Model"), *(len(model) for model, _ in parts.values()))
-    price_width = max(len("Price"), *(len(f"${price:.2f}") for _, price in parts.values()))
-    separator_width = label_width + model_width + price_width + 4
+print("PC Build Price Breakdown")
+print("-" * 30)
+for part, price in parts.items():
+    print(f"{part:<12} ${price:>7.2f}")
+print("-" * 30)
+print(f"{'Total':<12} ${total_build:>7.2f}")
 
-    print("\nPC Build Price Breakdown")
-    print("-" * separator_width)
-    print(f"{'Component':<{label_width}}  {'Model':<{model_width}}  {'Price':>{price_width}}")
-    for part, (model, price) in parts.items():
-        print(f"{part:<{label_width}}  {model:<{model_width}}  ${price:>{price_width - 1}.2f}")
-    print("-" * separator_width)
-    print(f"{'Total':<{label_width}}  {'':<{model_width}}  ${calculate_total(parts):>{price_width - 1}.2f}")
+# It will output dashes and has its own title to show the list. This is how Python formats code when doing math.
 
-
-def main() -> None:
-    parts = get_parts_from_user()
-    print_breakdown(parts)
-
-
-if __name__ == "__main__":
-    main()
+# Later on, I will remake this program with interactive features and I'll put more effort into it.
