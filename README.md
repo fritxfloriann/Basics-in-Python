@@ -1,7 +1,6 @@
 # DISCONTINUATION NOTICE
 
-This repository will be discontinued, and new features, updates, and implementations will no longer come. This repository will be dormant as the focus has shifted to `Python-Projects`.
-
+This repository will be discontinued, and new features, updates, and implementations will no longer be added. This repository will be dormant as the focus has shifted to `Python-Projects`. This repository serves as a learning curve and the source material for most of my notable projects.
 
 # Welcome to Basics-In-Python
 
