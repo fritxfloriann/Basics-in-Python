@@ -1,5 +1,0 @@
-print("Hello World!")
-
-print("This is my first Python script.")
-
-print("This will be my script for the print function.")
