@@ -16,6 +16,10 @@ The separation between this experimental repository and the project repository i
 
 ## Purpose of Basics-In-Python
 
-The purpose of `Basics-In-Python` is to teach the user about each Python fundamental as shown in each file. The comments and explanations cover understanding and basic knowledge of Python. This repository serves as the first creation for each of my projects, which is turned into a real program for users.
+The purpose of `Basics-In-Python` is to teach the user about each Python fundamental as shown in each file. The comments and explanations cover understanding and basic knowledge of Python. This repository serves as the first creation for each of my projects, which is turned into real programs for users.
 
 If you want to improve the code in this repository, you are free to fork it and modify the files.
+
+# Discontinuation Notice
+
+This repository will be discontinued, and new features, updates, and implementations will no longer come. This repository will be dormant as the focus has shifted to `Python-Projects`.
